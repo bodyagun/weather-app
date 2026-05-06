@@ -6,12 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./javascript/main.js" defer></script>
+    <script src="./javascript/ui.js" defer></script>
+    <script src="./javascript/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <form id="weather-form">
 <fieldset>
-    <p>Weather App</p>
+    <h2>Weather App</h2>
     
     <div class="search-container">
     <input 
@@ -41,9 +45,22 @@
     </fieldset>
 </form>
 
-<div class="hidden" id="report">
-
+<div id="report">
+    <p class="location">--</p>
+    <p class="degree" >--°</p>
+    <div class="img"></div>
+    <p class="condition">--</p>
+    <div class="hl">
+        <p class="high">H: --°</p>
+        <p class="low">L: --°</p>
+    </div>
+    <p class="comment">What's expected tomorrow?</p>
 </div>
+
+<footer>
+    <p>Comparison is the thief of joy</p>
+    <p>bodyagun © 2026 All rights reserved.</p>
+</footer>
 
 </body>
 </html>
