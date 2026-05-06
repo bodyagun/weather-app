@@ -11,7 +11,7 @@ weatherForm.addEventListener("submit", async (e) => {
 
 async function getGeoCode(value) {
     try {
-        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=28d7afe53e8b52a92909608cf67ef563`)
+        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=28d7afe53e8b52a92909608cf67ef563`)
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`)
     }
